@@ -8,5 +8,6 @@
 <body>
     <h1>Welcome to NearBy</h1>
     <p>This is the home page of the NearBy application.</p>
+    
 </body>
 </html>
