@@ -61,7 +61,8 @@ require_once __DIR__ . '/includes/header.php';
         <p class="lead text-muted mb-4">Search verified accommodations, connect with senior owners, and settle into a comfortable, affordable space designed for student life.</p>
         <div class="d-flex flex-column flex-md-row gap-3">
             <a href="search.php" class="btn btn-primary btn-lg px-4">Start Searching</a>
-            <a href="register.php" class="btn btn-outline-light btn-lg px-4">Join NearBy</a>
+            <a href="register.php" class="btn btn-outline-light btn-lg px-4" style="color: #319d65; border: 2px solid;
+">Join NearBy</a>
         </div>
     </div>
     <div class="hero-illustration p-4 mt-4 mt-lg-0 w-100">
@@ -185,7 +186,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <span class="fw-semibold text-success">₹7,500 / month</span>
-                        <span class="small text-muted"><i class="bi bi-geo-alt me-1"></i>Gwalior</span>
+                        <span class="small text-muted"><a href="https://maps.app.goo.gl/ygA3C2ZgjkL5BgHJ7" class="text-decoration-none"><i class="bi bi-geo-alt me-1"></i>Bank Colony, Gwalior</a></span>
                     </div>
                 </div>
             </div>
@@ -201,7 +202,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <span class="fw-semibold text-success">₹11,200 / month</span>
-                        <span class="small text-muted"><i class="bi bi-geo-alt me-1"></i>Gwalior</span>
+                        <span class="small text-muted"><a href="https://maps.app.goo.gl/hBhKMJuK48Utgj568" class="text-decoration-none"><i class="bi bi-geo-alt me-1"></i>Gole Ka Mandir, Gwalior</a></span>
                     </div>
                 </div>
             </div>
@@ -217,7 +218,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <span class="fw-semibold text-success">₹9,300 / month</span>
-                        <span class="small text-muted"><i class="bi bi-geo-alt me-1"></i>Gwalior</span>
+                        <span class="small text-muted"><a href="https://maps.app.goo.gl/3EPudEjjDycgT3ca9" class="text-decoration-none"><i class="bi bi-geo-alt me-1"></i>Krishna Nagar, Gwalior</a></span>
                     </div>
                 </div>
             </div>
@@ -271,11 +272,11 @@ require_once __DIR__ . '/includes/header.php';
                 <hr class="my-4">
                 <div class="row g-3 text-center text-md-start">
                     <div class="col-md-4">
-                        <h3 class="h2 fw-bold mb-1">2k+</h3>
+                        <h3 class="h2 fw-bold mb-1">12</h3>
                         <p class="small text-muted mb-0">Active student members</p>
                     </div>
                     <div class="col-md-4">
-                        <h3 class="h2 fw-bold mb-1">540</h3>
+                        <h3 class="h2 fw-bold mb-1">2</h3>
                         <p class="small text-muted mb-0">Verified senior hosts</p>
                     </div>
                     <div class="col-md-4">
