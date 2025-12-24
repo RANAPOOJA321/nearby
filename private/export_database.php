@@ -1,9 +1,17 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = ""; // XAMPP default
-$dbname = "jeeneettracker";
-$backupFile = "C:\\xampp\\htdocs\\jeeneetTracker\\sql\\jeeneettracker.sql";
+require_once __DIR__ . '/../config/config.php';
+
+$host = DB_HOST;
+$user = DB_USER;
+$pass = DB_PASS; // XAMPP default keeps empty string locally
+$dbname = DB_NAME;
+
+$backupDir = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'database' . DIRECTORY_SEPARATOR . 'backups';
+if (!is_dir($backupDir) && !mkdir($backupDir, 0775, true)) {
+    die('Error: Unable to create backup directory: ' . $backupDir);
+}
+
+$backupFile = $backupDir . DIRECTORY_SEPARATOR . 'nearby_' . date('Ymd_His') . '.sql';
 
 // Ensure directory exists and is writable
 if (!is_dir(dirname($backupFile))) {
@@ -27,6 +35,9 @@ if ($pass !== null && $pass !== '') {
     $parts[] = '--password=' . escapeshellarg($pass);
 }
 $parts[] = '--host=' . escapeshellarg($host);
+if (defined('DB_PORT') && DB_PORT) {
+    $parts[] = '--port=' . escapeshellarg((string) DB_PORT);
+}
 $parts[] = escapeshellarg($dbname);
 $parts[] = '--add-drop-table';
 $parts[] = '--complete-insert';

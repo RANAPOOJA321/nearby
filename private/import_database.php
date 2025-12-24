@@ -2,7 +2,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require 'assets/pages/_connection.php';
+require_once __DIR__ . '/../config/db.php';
+
+$conn = nearby_db_connect();
 
 // 1️⃣ Delete all tables in the database
 $result = $conn->query("SHOW TABLES");
@@ -21,12 +23,12 @@ if ($result) {
 }
 
 // 2️⃣ Path to your SQL file
-$sqlFile = __DIR__ . '/sql/jeeneettracker.sql';
+$sqlFile = dirname(__DIR__) . '/database/schema.sql';
 if (!file_exists($sqlFile)) {
     die("❌ File $sqlFile not found.\n");
 }
 
-// 3️⃣ Execute jeeneettracker.sql
+// 3️⃣ Execute schema.sql
 $sql = file_get_contents($sqlFile);
 
 if ($conn->multi_query($sql)) {
@@ -35,9 +37,9 @@ if ($conn->multi_query($sql)) {
             $result->free();
         }
     } while ($conn->next_result());
-    echo "✅ jeeneettracker.sql executed successfully.\n";
+    echo "✅ schema.sql executed successfully.\n";
 } else {
-    echo "❌ Error executing jeeneettracker.sql: " . $conn->error . "\n";
+    echo "❌ Error executing schema.sql: " . $conn->error . "\n";
 }
 
 $conn->close();
