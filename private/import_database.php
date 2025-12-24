@@ -31,6 +31,10 @@ if (!file_exists($sqlFile)) {
 // 3️⃣ Execute schema.sql
 $sql = file_get_contents($sqlFile);
 
+// Hosting environments often block CREATE DATABASE/USE statements; strip them to avoid permission errors.
+$sql = preg_replace('/CREATE\s+DATABASE[^;]*;\s*/i', '', $sql);
+$sql = preg_replace('/USE\s+[`\"\[]?[\w-]+[`\"\]]?;\s*/i', '', $sql);
+
 if ($conn->multi_query($sql)) {
     do {
         if ($result = $conn->store_result()) {
