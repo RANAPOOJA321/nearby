@@ -4,12 +4,8 @@
         <div class="container">
             <div class="row gy-4 align-items-start footer-top">
                 <div class="col-lg-3 text-center text-lg-start">
-                    <div class="footer-brand d-inline-flex align-items-center gap-3 mb-3">
-                        <img src="assets/images/favicon_io/android-chrome-192x192.png" alt="NearBy logo" class="footer-logo">
-                        <div>
-                            <span class="h5 d-block mb-0">NearBy Housing</span>
-                            <small class="text-white-50">Live close. Live better.</small>
-                        </div>
+                    <div class="d-inline-flex align-items-center gap-3 mb-3">
+                        <img src="assets/images/nearby_image.png" alt="NearBy logo" class="footer-logo">
                     </div>
                     <p class="footer-copy mb-3">
                         Discover vetted rooms, apartments, and co-living spaces designed for students and young professionals.
@@ -30,8 +26,6 @@
                         <li><a href="search.php">For renters</a></li>
                         <li><a href="register.php">Create account</a></li>
                         <li><a href="login.php">Member login</a></li>
-                        <li><a href="posts/list.php">Community stories</a></li>
-                        <li><a href="contact/request.php">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-lg-2">
@@ -52,16 +46,20 @@
                     </div>
                     <div class="footer-social d-flex gap-2">
                         <a class="social-link" href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
-                            <span>IG</span>
+                            <i class="bi bi-instagram"></i>
+                            <span class="visually-hidden">Instagram</span>
                         </a>
                         <a class="social-link" href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
-                            <span>Fb</span>
+                            <i class="bi bi-facebook"></i>
+                            <span class="visually-hidden">Facebook</span>
                         </a>
                         <a class="social-link" href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
-                            <span>YT</span>
+                            <i class="bi bi-youtube"></i>
+                            <span class="visually-hidden">YouTube</span>
                         </a>
                         <a class="social-link" href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
-                            <span>In</span>
+                            <i class="bi bi-linkedin"></i>
+                            <span class="visually-hidden">LinkedIn</span>
                         </a>
                     </div>
                 </div>

@@ -61,7 +61,7 @@ require_once __DIR__ . '/includes/header.php';
         <p class="lead text-muted mb-4">Search verified accommodations, connect with senior owners, and settle into a comfortable, affordable space designed for student life.</p>
         <div class="d-flex flex-column flex-md-row gap-3">
             <a href="search.php" class="btn btn-primary btn-lg px-4">Start Searching</a>
-            <a href="register.php" class="btn btn-outline-light btn-lg px-4" style="color: #319d65; border: 2px solid;
+            <a href="register.php" class="btn btn-lg px-4" style="color: #319d65; border: 2px solid;
 ">Join NearBy</a>
         </div>
     </div>
