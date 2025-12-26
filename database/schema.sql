@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS users (
     password VARCHAR(255) NOT NULL,
     role ENUM('junior', 'senior') NOT NULL,
     user_type ENUM('student', 'owner', 'service_provider') NOT NULL DEFAULT 'student',
+    user_category ENUM('student', 'home_owner', 'room_owner', 'tiffin', 'gas', 'milk', 'sabji', 'other_service') NOT NULL DEFAULT 'student',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 

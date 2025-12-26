@@ -105,15 +105,17 @@ CREATE TABLE `users` (
   `college_email` varchar(160) NOT NULL,
   `password` varchar(255) NOT NULL,
   `role` enum('junior','senior') NOT NULL,
+  `user_type` enum('student','owner','service_provider') NOT NULL DEFAULT 'student',
+  `user_category` enum('student','home_owner','room_owner','tiffin','gas','milk','sabji','other_service') NOT NULL DEFAULT 'student',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`),
   UNIQUE KEY `college_email` (`college_email`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` (`id`, `name`, `college_email`, `password`, `role`, `created_at`) VALUES (1,'Sumit Rathor','24cd3dsu4@mitsgwl.ac.in','$2y$10$j1KhpUIYYOmv14q4yKArh.5S9DLoZT/GNvLm0FLF09IypzzeD55hy','junior','2025-12-24 03:29:59');
+INSERT INTO `users` (`id`, `name`, `college_email`, `password`, `role`, `user_type`, `user_category`, `created_at`) VALUES (1,'Sumit Rathor','dfdfdf@mitsgwl.ac.in','$2y$10$319UnuAVTFzn/EzrfoV3kOzx14.rJVWdoOBR.1NAP3wSUCPl1wMG.','senior','service_provider','gas','2025-12-26 10:59:09'),(2,'Sumit Rathor','sumitrathor142272@gmail.com','$2y$10$cOBWwHO4tZPnS9Ws54QW0OM/mofwtUKIJXyEI5EjRf.VG8cLhNvuW','senior','service_provider','student','2025-12-26 11:53:06');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
