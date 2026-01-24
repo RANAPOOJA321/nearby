@@ -11,17 +11,14 @@ The platform eliminates broker dependency and connects **students, property owne
 ![Issues](https://img.shields.io/github/issues/sumitrathor1/nearby)
 ![License](https://img.shields.io/github/license/sumitrathor1/nearby)
 
-✅ Solution – NearBy
-NearBy solves these problems by providing:
+🌟 Problem Statement
+When students move to a new city for education, they often face challenges such as:
 
-Verified accommodation listings near campuses
-Direct communication with owners and service providers
-Local guidance for food, transport, and daily needs
-AI-powered chatbot support
-A modern, clean, and mobile-friendly interface
-The platform is designed by students, for students, keeping real-life needs in mind.
-
-
+Difficulty finding safe and affordable accommodation
+High brokerage charges
+Unreliable listings and lack of trust
+No single platform for daily local services (food, milk, gas, etc.)
+Feeling lost without local guidance
 
 
 
