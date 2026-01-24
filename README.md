@@ -57,7 +57,14 @@ The platform is designed **by students, for students**, keeping real-life needs 
   - Allowed for (Male / Female / Family)
   - Facilities (Wi-Fi, Food, Parking, Water, Electricity, CCTV, Power Backup)
 
----
+### Home Page
+![Home Page](https://github.com/RANAPOOJA321/nearby/blob/ca5a539b7bb35202b7cadf56eb51ea4feae18b52/home.png)
+
+### Listings Page
+![Listings Page](https://github.com/RANAPOOJA321/nearby/blob/7367dd105601d3dcb5abfc13241eb21b5360ace0/listing.png)
+
+### Local Services
+![Local Services](https://github.com/RANAPOOJA321/nearby/blob/7367dd105601d3dcb5abfc13241eb21b5360ace0/service.png)
 
 ### 🧑‍🤝‍🧑 Multi-Role User System
 Users on NearBy can be:
