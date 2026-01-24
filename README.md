@@ -3,7 +3,16 @@
 **NearBy** is a student-centric web platform built to simplify the process of finding **rental rooms, PGs, hostels, and essential local services** in a new city.  
 The platform eliminates broker dependency and connects **students, property owners, and local service providers** directly in a trusted, user-friendly environment.
 
----
+# NearBy – Student Housing & Local Services Platform
+
+![Elite Coders](https://img.shields.io/badge/Elite%20Coders-Participant-blue)
+![GitHub stars](https://img.shields.io/github/stars/sumitrathor1/nearby)
+![GitHub forks](https://img.shields.io/github/forks/sumitrathor1/nearby)
+![Issues](https://img.shields.io/github/issues/sumitrathor1/nearby)
+![License](https://img.shields.io/github/license/sumitrathor1/nearby)
+
+*NearBy* is a student-centric web platform built to simplify the process of finding *rental rooms, PGs, hostels, and essential local services* in a new city.  
+The platform eliminates broker dependency and connects *students, property owners, and local service providers* directly in a trusted, user-friendly environment.
 
 ## 🌟 Problem Statement
 
